@@ -1,0 +1,28 @@
+version: '2'
+services:
+  mongo:
+    image: mongo
+    volumes:
+      - ./data/:/data/db
+    ports:
+      - 27017:27017
+
+#  app:
+#    build: .
+#    image: cied-web-platform:dev
+#    container_name: 'app'
+#    depends_on:
+#      - mysql
+#      - redis
+#      - selenium
+#    links:
+#      - mysql:mysql
+#      - redis:redis
+#    env_file:
+#      - ./.docker-env
+#    volumes:
+#      - ./build:/src/build
+#      - ./data/cied:/src/data/cied
+#    cap_add:
+#      - SYS_PTRACE
+#    command: [ 'run', 'dev' ]
