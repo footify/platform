@@ -1,0 +1,2 @@
+# platform
+Global platform repository
