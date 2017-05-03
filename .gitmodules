@@ -1,3 +1,6 @@
 [submodule "login-service"]
 	path = login-service
 	url = https://github.com/footify/login-service.git
+[submodule "cli"]
+	path = cli
+	url = https://github.com/footify/cli.git
