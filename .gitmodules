@@ -4,3 +4,6 @@
 [submodule "cli"]
 	path = cli
 	url = https://github.com/footify/cli.git
+[submodule "api-service"]
+	path = api-service
+	url = https://github.com/footify/api-service.git

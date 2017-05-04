@@ -15,3 +15,14 @@ services:
     ports:
       - 3000:3000
     command: [ 'start']
+
+  api-service:
+    build: ./api-service
+    container_name: 'api-service'
+    depends_on:
+      - mongo
+    links:
+      - mongo
+    ports:
+      - 3001:3001
+    command: [ 'start']
