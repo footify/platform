@@ -33,6 +33,7 @@ Vagrant.configure(2) do |config|
       node.vm.network "private_network", type: "dhcp"
 
       node.vm.network "forwarded_port", guest: 3000, host: 3000 #Login service
+      node.vm.network "forwarded_port", guest: 3001, host: 3001 #Api service
       node.vm.network "forwarded_port", guest: 22, host: 9022 #SSH
 
       node.hostmanager.aliases = %w(login.footify.guedj.tech api.footify.guedj.tech)
